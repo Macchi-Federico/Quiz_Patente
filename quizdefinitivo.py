@@ -261,6 +261,7 @@ class AppQuiz:
         self.bottone_successiva.config(state=tk.DISABLED)
         self.bottone_precedente.config(state=tk.DISABLED)
         self.bottone_termina.config(state=tk.DISABLED)
+        self.master.after(1000, self.master.destroy)
 
 if __name__ == "__main__":
     root = tk.Tk()
